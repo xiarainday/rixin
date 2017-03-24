@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.myfragment"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="8"
+        android:targetSdkVersion="18" />
+
+    <!-- //地图包、搜索包需要的基础权限 -->
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+
+    <!-- //定位包、导航包需要的额外权限（注：基础权限也需要） -->
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_LOCATION_EXTRA_COMMANDS" />
+    <uses-permission android:name="android.permission.ACCESS_MOCK_LOCATION" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />       
+    
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        
+        <meta-data android:name="com.amap.api.v2.apikey" android:value="998f8d8ddbdf66aa8fea89fd5a4a34b0"></meta-data>
+         <!-- 定位需要的服务 -->
+        <service android:name="com.amap.api.location.APSService" >
+        </service>
+              
+        <activity
+            android:name="com.rain.start.startView"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        
+        <activity 
+            android:name="com.example.myfragment.dianzhangaikuang"
+            android:label="电站概况"></activity>
+        <activity android:name="com.example.myfragment.zhuyemian"
+            android:label="概况"></activity>
+        <activity android:name="com.example.myfragment.dianzhanliebiao"
+            android:label="电站列表"></activity>
+        <activity android:name="com.example.myfragment.shebeixinxi"
+            android:label="逆变器"></activity>
+        <activity android:name="com.example.myfragment.tianqi"
+            android:label="天气"></activity>
+        <activity android:name="com.example.myfragment.MainActivity"
+            android:label="总发电量统计"></activity>
+        <activity android:name="com.example.myfragment.xxzx"
+            android:label="消息中心"></activity>
+        <activity android:name="com.example.myfragment.sbztxx"
+            android:label="设备状态信息"></activity>
+        <activity android:name="com.example.myfragment.fadianliang"
+            android:label="发电量"></activity>
+        <activity android:name="com.example.myfragment.nibianqi_zt"
+            android:label="逆变器状态"></activity>
+        
+        <activity android:name="com.example.myfragment.fadianliang_gl"></activity>
+        <activity android:name="com.example.myfragment.fadianliang_yfdl"></activity>
+        <activity android:name="com.example.myfragment.fadianliang_nfdl"></activity>
+        <activity android:name="com.example.myfragment.map"
+            android:label="地图"></activity>
+        <activity android:name="com.example.myfragment.NaviCustomActivity"></activity>
+        <activity android:name="com.example.myfragment.NaviRouteActivity"></activity>
+        <activity android:name="com.example.myfragment.NaviSettingActivity"
+            android:theme="@android:style/Theme.DeviceDefault.Dialog.NoActionBar"></activity>
+        
+        <activity android:name="com.rain.start.LoginActivity"></activity>
+        <activity android:name="com.rain.start.logoActivity"></activity>
+        
+        
+    </application>
+
+</manifest>

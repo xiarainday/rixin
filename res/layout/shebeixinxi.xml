@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/tv_nbq_dzmc"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="15dip"
+        android:gravity="center_horizontal"
+        android:text="电站名称"
+        android:textSize="28sp" />
+    
+    
+
+
+ <TableLayout
+        android:layout_width="wrap_content"
+        android:layout_height="fill_parent"
+        android:orientation="vertical"
+        android:stretchColumns="*" 
+        android:layout_gravity="center_vertical" >
+
+
+
+       <TableRow
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginLeft="10dip"          
+            android:layout_marginTop="10dip"
+            android:layout_marginRight="0dip" >
+            
+          <TextView
+              	android:id="@+id/tv_nbq11"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="逆变器"
+                android:textSize="15sp"
+                android:layout_gravity="center_vertical" />
+
+           <TextView
+               android:id="@+id/tv_nbq22"
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:text="发电量（kWh）"
+               android:textSize="15sp"
+               android:layout_gravity="center_vertical" />
+
+           <TextView
+               android:id="@+id/imageView1"
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:text="状态"
+               android:gravity="center"
+			   android:layout_gravity="center_vertical" />
+
+        </TableRow>
+        
+        <ListView
+            android:id="@+id/list_nbq"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:divider="#00000000"
+            android:dividerHeight="18dp"
+            android:orientation="vertical" >
+        </ListView>
+
+    </TableLayout>
+    
+ 	
+
+</LinearLayout>

@@ -1,0 +1,114 @@
+<TabHost xmlns:android="http://schemas.android.com/apk/res/android"  
+    android:id="@android:id/tabhost"  
+    android:layout_width="fill_parent"  
+    android:layout_height="fill_parent" >  
+  
+    <LinearLayout  
+        android:layout_width="fill_parent"  
+        android:layout_height="fill_parent"      
+	    android:background="@drawable/jbshape"  
+        android:orientation="vertical" >  
+            
+        <FrameLayout  
+            android:layout_width="fill_parent"  
+            android:layout_height="wrap_content" >  
+  
+            <RadioGroup  
+                android:id="@+id/main_tab_group_fdl"  
+                android:layout_width="fill_parent"  
+                android:layout_height="wrap_content"       
+                android:orientation="horizontal"  
+                 >  
+  
+                <RadioButton  
+                    android:id="@+id/main_tab_gonglv"  
+                    style="@style/MMTabButton"  
+                    android:layout_weight="1.0" 
+
+                    android:textSize="22sp"    
+                    android:text="功率" />  
+  
+                <RadioButton  
+                    android:id="@+id/main_tab_yfdl"  
+                    style="@style/MMTabButton"  
+                    android:layout_weight="1.0"
+                    android:checked="true" 
+                    android:textSize="22sp"    
+                    android:text="月发电量" />  
+  
+                <RadioButton  
+                    android:id="@+id/main_tab_nfdl"  
+                    style="@style/MMTabButton"  
+                    android:layout_weight="1.0"
+                    android:textSize="22sp"   
+                    android:text="年发电量" />  
+
+            </RadioGroup>  
+  
+        </FrameLayout> 
+        
+          
+        <TabWidget  
+            android:id="@android:id/tabs"  
+            android:layout_width="fill_parent"  
+            android:layout_height="wrap_content"  
+            android:layout_weight="0.0"  
+            android:visibility="gone" />  
+        
+        <FrameLayout  
+            android:id="@android:id/tabcontent"  
+            android:layout_width="fill_parent"  
+            android:layout_height="0.0dip"
+            android:layout_marginTop="0dip"
+            android:layout_weight="1.0" />  
+        
+    </LinearLayout>  
+  
+</TabHost>
+
+
+<!-- <?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"  
+    android:layout_width="fill_parent"  
+    android:layout_height="fill_parent" >  
+  
+    第一个布局  
+    <LinearLayout     
+        android:id="@+id/view1"  
+        android:layout_width="match_parent"  
+        android:layout_height="match_parent" >        
+        <TextView  
+            android:id="@+id/textView1"  
+            android:layout_width="wrap_content"  
+            android:layout_height="wrap_content"  
+            android:text="张小媛" />  
+    </LinearLayout>  
+  
+    第二个布局  
+    <LinearLayout     
+        android:id="@+id/view2"  
+        android:layout_width="match_parent"  
+        android:layout_height="match_parent" >  
+          
+        <TextView  
+            android:id="@+id/textView2"  
+            android:layout_width="wrap_content"  
+            android:layout_height="wrap_content"  
+            android:text="马贝贝" />  
+    </LinearLayout>  
+  
+    第三个布局  
+    <LinearLayout     
+        android:id="@+id/view3"  
+        android:layout_width="match_parent"  
+        android:layout_height="match_parent" >  
+          
+        <TextView  
+            android:id="@+id/textView3"  
+            android:layout_width="wrap_content"  
+            android:layout_height="wrap_content"  
+            android:text="呼伦贝尔" />  
+    </LinearLayout>  
+  
+</FrameLayout>  
+ -->

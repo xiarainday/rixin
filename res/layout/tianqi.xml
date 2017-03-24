@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/tv_tianqi_dzmc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="15dip"
+        android:text="电站名称"
+        android:textSize="28sp" />
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dip"
+        android:layout_marginRight="20dip"
+        android:layout_marginTop="20dip"
+        android:stretchColumns="*" >
+
+        <TableRow
+            android:id="@+id/tableRow_tq"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+
+            <TextView
+                android:id="@+id/tv_cs"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:text="城市" />
+
+            <ImageView
+                android:id="@+id/tv_tq"
+                android:layout_width="50dip"
+                android:layout_height="50dip"
+                android:layout_column="2"
+                android:layout_gravity="right"
+                android:src="@drawable/yuan" />
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/tableRow_wd"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dip" >
+
+            <TextView
+                android:id="@+id/tv_cs1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:text="温度" />
+
+            <ImageView
+                android:id="@+id/textView4"
+                android:layout_width="50dip"
+                android:layout_height="50dip"
+                android:layout_gravity="center"
+                android:src="@drawable/yuan" />
+
+            <TextView
+                android:id="@+id/tv_wd"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right|center_vertical"
+                android:text="0" />
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/tableRow_fs"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dip" >
+
+            <TextView
+                android:id="@+id/tv_cs2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:text="风速" />
+
+            <ImageView
+                android:id="@+id/textView4"
+                android:layout_width="50dip"
+                android:layout_height="50dip"
+                android:layout_gravity="center"
+                android:src="@drawable/yuan" />
+
+            <TextView
+                android:id="@+id/tv_fs"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right|center_vertical"
+                android:text="0" />
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/tableRow_sd"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dip" >
+
+            <TextView
+                android:id="@+id/tv_cs3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:text="湿度" />
+
+            <ImageView
+                android:id="@+id/textView4"
+                android:layout_width="50dip"
+                android:layout_height="50dip"
+                android:layout_gravity="center"
+                android:src="@drawable/yuan" />
+
+            <TextView
+                android:id="@+id/tv_sd"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right|center_vertical"
+                android:text="0" />
+        </TableRow>
+    </TableLayout>
+
+</LinearLayout>

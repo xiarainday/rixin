@@ -1,0 +1,292 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/tv_dzmc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="15dip"
+        android:text="电站名称"
+        android:textSize="28sp" />
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="324dp"
+        android:layout_marginLeft="20dip"
+        android:layout_marginRight="20dip"
+        android:layout_marginTop="20dip"
+        android:stretchColumns="*" >
+
+        <TableRow
+            android:id="@+id/tableRow_zjrl"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+
+            <TextView
+                android:id="@+id/tv_mc1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="装机容量"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/tv_zjrl"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right"
+                android:text="0"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/tv_dw1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right"
+                android:text="kW"
+                android:textSize="20sp" />
+        </TableRow>
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="1px"
+            android:layout_marginLeft="10dip"
+            android:layout_marginRight="10dip"
+            android:background="#dddddd" />
+
+        <TableRow
+            android:id="@+id/tableRow_gl"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dip" >
+
+            <TextView
+                android:id="@+id/tv_mc2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="功率"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/tv_gl"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right"
+                android:text="0"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/tv_dw"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right"
+                android:text="kW"
+                android:textSize="20sp" />
+        </TableRow>
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="1px"
+            android:layout_marginLeft="10dip"
+            android:layout_marginRight="10dip"
+            android:background="#dddddd" />
+
+        <TableRow
+            android:id="@+id/tableRow_dwfdl"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dip" >
+
+            <TextView
+                android:id="@+id/tv_mc3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="单位发电量"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/tv_dwfdl"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right"
+                android:text="0"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/tv_dw3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right"
+                android:text="kwh/kw"
+                android:textSize="20sp" />
+        </TableRow>
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="1px"
+            android:layout_marginLeft="10dip"
+            android:layout_marginRight="10dip"
+            android:background="#dddddd" />
+
+        <TableRow
+            android:id="@+id/tableRow_jrfdl"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dip" >
+
+            <TextView
+                android:id="@+id/tv_mc4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="今日发电量"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/tv_jrfdl"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right"
+                android:text="0"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/tv_dw4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right"
+                android:text="kWh"
+                android:textSize="20sp" />
+        </TableRow>
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="1px"
+            android:layout_marginLeft="10dip"
+            android:layout_marginRight="10dip"
+            android:background="#dddddd" />
+
+        <TableRow
+            android:id="@+id/tableRow_jrsy"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dip" >
+
+            <TextView
+                android:id="@+id/tv_mc5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="今日收益"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/tv_jrsy"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right"
+                android:text="0"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/tv_dw5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right"
+                android:text="元"
+                android:textSize="20sp" />
+        </TableRow>
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="1px"
+            android:layout_marginLeft="10dip"
+            android:layout_marginRight="10dip"
+            android:background="#dddddd" />
+
+        <TableRow
+            android:id="@+id/tableRow_ljfdl"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dip" >
+
+            <TextView
+                android:id="@+id/tv_mc6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="累计发电量"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/tv_ljfdl"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right"
+                android:text="0"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/tv_dw6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right"
+                android:text="MWh"
+                android:textSize="20sp" />
+        </TableRow>
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="1px"
+            android:layout_marginLeft="10dip"
+            android:layout_marginRight="10dip"
+            android:background="#dddddd" />
+
+        <TableRow
+            android:id="@+id/tableRow_ljsy"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dip" >
+
+            <TextView
+                android:id="@+id/tv_mc7"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="累计收益"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/tv_ljsy"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right"
+                android:text="0"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/tv_dw7"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right"
+                android:text="万元"
+                android:textSize="20sp" />
+        </TableRow>
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="1px"
+            android:layout_marginLeft="10dip"
+            android:layout_marginRight="10dip"
+            android:background="#dddddd" />
+        
+    </TableLayout>
+    
+    <TextView
+            android:id="@+id/tv_map"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:text="详细地址"
+            android:textSize="20sp" />
+
+</LinearLayout>

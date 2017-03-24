@@ -1,0 +1,79 @@
+# view AndroidManifest.xml #generated:34
+-keep class com.amap.api.location.APSService { <init>(...); }
+
+# view res/layout/activity_route.xml #generated:39
+# view res/layout/map.xml #generated:56
+-keep class com.amap.api.maps.MapView { <init>(...); }
+
+# view res/layout/activity_navi.xml #generated:7
+-keep class com.amap.api.navi.AMapNaviView { <init>(...); }
+
+# view AndroidManifest.xml #generated:58
+-keep class com.example.myfragment.MainActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:74
+-keep class com.example.myfragment.NaviCustomActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:75
+-keep class com.example.myfragment.NaviRouteActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:76
+-keep class com.example.myfragment.NaviSettingActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:47
+-keep class com.example.myfragment.dianzhangaikuang { <init>(...); }
+
+# view AndroidManifest.xml #generated:52
+-keep class com.example.myfragment.dianzhanliebiao { <init>(...); }
+
+# view AndroidManifest.xml #generated:64
+-keep class com.example.myfragment.fadianliang { <init>(...); }
+
+# view AndroidManifest.xml #generated:69
+-keep class com.example.myfragment.fadianliang_gl { <init>(...); }
+
+# view AndroidManifest.xml #generated:71
+-keep class com.example.myfragment.fadianliang_nfdl { <init>(...); }
+
+# view AndroidManifest.xml #generated:70
+-keep class com.example.myfragment.fadianliang_yfdl { <init>(...); }
+
+# view AndroidManifest.xml #generated:72
+-keep class com.example.myfragment.map { <init>(...); }
+
+# view AndroidManifest.xml #generated:66
+-keep class com.example.myfragment.nibianqi_zt { <init>(...); }
+
+# view AndroidManifest.xml #generated:62
+-keep class com.example.myfragment.sbztxx { <init>(...); }
+
+# view AndroidManifest.xml #generated:54
+-keep class com.example.myfragment.shebeixinxi { <init>(...); }
+
+# view AndroidManifest.xml #generated:56
+-keep class com.example.myfragment.tianqi { <init>(...); }
+
+# view AndroidManifest.xml #generated:60
+-keep class com.example.myfragment.xxzx { <init>(...); }
+
+# view AndroidManifest.xml #generated:50
+-keep class com.example.myfragment.zhuyemian { <init>(...); }
+
+# view AndroidManifest.xml #generated:79
+-keep class com.rain.start.LoginActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:80
+-keep class com.rain.start.logoActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:37
+-keep class com.rain.start.startView { <init>(...); }
+
+# view res/layout/dianzhanliebiao.xml #generated:12
+-keep class com.rain.xiaoguo.RefreshableView { <init>(...); }
+
+# onClick res/layout/map.xml #generated:12
+# onClick res/layout/map.xml #generated:157
+# onClick res/layout/map.xml #generated:20
+# onClick res/layout/map.xml #generated:28
+-keepclassmembers class * { *** doClick(...); }
+

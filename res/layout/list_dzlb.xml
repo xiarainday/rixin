@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="horizontal"   
+    android:minHeight="70dp" >
+
+    <TableLayout
+        android:layout_width="0dp"
+        android:layout_weight="10"
+        android:layout_height="fill_parent"
+        android:orientation="vertical"
+        android:stretchColumns="*" 
+        android:layout_gravity="center_vertical" >
+
+        <TableRow
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="10dip" >
+
+            <TextView
+                android:id="@+id/tv_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="电站名称"
+                android:textSize="18sp" />
+
+        </TableRow>
+
+       <TableRow
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="5dip" >
+            
+          <TextView
+              	android:id="@+id/tv_gonglv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="功率"
+                android:textSize="15sp" />
+
+           <TextView
+               android:id="@+id/tv_time"
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:text="时间"
+               android:textSize="15sp" />
+
+        </TableRow>
+
+    </TableLayout>
+
+    <ImageView
+        android:id="@+id/iv_zhuangtai"
+        android:layout_weight="1"
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+        android:layout_gravity="center_vertical"
+        android:src="@drawable/yuan" />
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:layout_height="50dp"
+        android:layout_gravity="center_vertical"
+        android:src="@drawable/jiantou" />
+
+</LinearLayout>
